@@ -1,0 +1,147 @@
+body{
+  
+}
+
+
+@font-face {
+    font-family: 'AdobeCleanBold';
+    src: url('../css/fonts/AdobeCleanBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AdobeCleanRegular';
+    src: url('../css/fonts/AdobeCleanRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar{
+  font-family: 'AdobeCleanBold';
+  background-color: black;
+}
+h1,h2,h3,h4{
+  font-family: 'AdobeCleanBold';
+}
+p{
+  font-family: 'AdobeCleanRegular';
+}
+.first-section{
+  height: 500px;
+  padding-top: 80px;
+  background-color: #282828;
+}
+.main-iframe{
+  width: 870px;
+  height: 460px;
+  background-color: black;
+}
+.slider-btn{
+  background-image: linear-gradient(to right, #2c63a6 , #86c306);;
+  height:500px;
+  padding-top: 250px;
+}
+h1,h2,h3{
+  background: -webkit-linear-gradient(#2c63a6, #86c306);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slider-btn{
+  color:white;
+}
+.slider{
+  background-color: #eeeeee;
+  height: 450px;
+  padding-top: 230px;
+}
+.slider-container{
+  width:30%;
+  right: 35%;
+  position:absolute;
+  margin-top: -100px;
+}
+.carousel-indicators{
+  position: relative;
+
+}
+.carousel-indicators li{
+  width: 20px;
+  height: 20px;
+  border:1px solid grey;
+  border-radius: 50%;
+  margin: -9px 20px 0 20px;
+  background-color: white;
+}
+.carousel-indicators li a{
+  width: inherit;
+  height: inherit;
+}
+.carousel-inner{
+  height: 300px;
+}
+.carousel-item{
+  height: inherit;
+}
+footer p{
+  font-size: 12px;
+}
+footer a{
+  color: #282828;
+}
+iframe{
+  border: 0;
+}
+.mobile-home{
+  display: none;
+}
+.mobile-home:hover{
+  text-decoration:none;
+}
+@media screen and (max-width: 767px) {
+  .slider-container{
+    width:80%;
+    right: 10%;
+  }
+  .main-iframe, .slider-btn h4{
+    width: 100% !important;
+  }
+  .mobile-home{
+    display: block;
+    margin-right: 5%;
+  }
+  .home{display: none;}
+  .slider{
+    background-color: #eeeeee;
+    height: 500px;
+    padding-top: 250px;
+  }
+  .main-iframe{
+    height: 240px;
+  }
+}
+
+
+
+
+
+/* About page */
+.about{
+  background-color:#282828 ;
+}
+.about-img{
+  transition: 0.5s;
+}
+.about-img:hover{
+  transform: scale(1.1);
+}
+
+/* Privacy page */
+.privacy{
+  background-color:#282828 ;
+}
+
+
+/* Privacy page */
+.terms{
+  background-color:#282828 ;
+}
