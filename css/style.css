@@ -1,5 +1,5 @@
 body{
-  
+  overflow-x: hidden;
 }
 
 
@@ -19,6 +19,21 @@ body{
 .navbar{
   font-family: 'AdobeCleanBold';
   background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+.nav-item a{
+  font-size: 25px;
+}
+#logo{
+  width: 40%;
+  transition: .5s;
+}
+#about{
+  margin-top: 45px;
+  transition: .5s;
 }
 h1,h2,h3,h4{
   font-family: 'AdobeCleanBold';
@@ -27,8 +42,8 @@ p{
   font-family: 'AdobeCleanRegular';
 }
 .first-section{
-  height: 500px;
-  padding-top: 80px;
+  height: 550px;
+  padding-top:250px;
   background-color: #282828;
 }
 .first-section h1{
@@ -40,28 +55,25 @@ p{
   background-color: black;
 }
 .slider-btn{
-  background-image: linear-gradient(to right, #2c63a6 , #86c306);;
-  height:500px;
-  padding-top: 250px;
+  background-image: linear-gradient(to right, #2c63a6 , #86c306);
+  padding-top: 335px;
+  color: white;
 }
 h1,h2,h3{
   background: -webkit-linear-gradient(#2c63a6, #86c306);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.slider-btn{
-  color:white;
-}
+
 .slider{
   background-color: #eeeeee;
-  height: 400px;
-  padding-top: 200px;
+  height: 250px;
+  padding-top: 50px;
 }
 .slider-container{
   width:30%;
-  right: 35%;
-  position:absolute;
-  margin-top: -100px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 .carousel-indicators{
   position: relative;
@@ -106,7 +118,6 @@ iframe{
 @media screen and (max-width: 767px) {
   .slider-container{
     width:80%;
-    right: 10%;
   }
   .main-iframe, .slider-btn h4{
     width: 100% !important;
@@ -124,6 +135,9 @@ iframe{
   .main-iframe{
     height: 240px;
   }
+  #logo{
+    width: 20%;
+  }
 }
 
 
@@ -133,6 +147,7 @@ iframe{
 /* About page */
 .about{
   background-color:#282828 ;
+  padding-top: 150px;
 }
 .about-img{
   transition: 0.5s;
@@ -143,11 +158,37 @@ iframe{
 
 /* Privacy page */
 .privacy{
+  padding-top: 150px;
   background-color:#282828 ;
 }
+#top-btn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(to right, #2c63a6 , #86c306);
+  transition: 1s;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  font-style: italic;
+  text-decoration: none;
+}
 
-
+#top-btn:hover {
+  background-image: linear-gradient(to right,#86c306, #2c63a6 );
+  border-radius: 25%;
+}
+html{
+  scroll-behavior: smooth;
+}
 /* Privacy page */
 .terms{
+  padding-top: 150px;
   background-color:#282828 ;
 }

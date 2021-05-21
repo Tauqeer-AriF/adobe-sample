@@ -39,3 +39,22 @@ function index2() {
    function index1_5() {
      window.open("index5.html", "_self");
    }
+
+
+
+
+
+
+
+
+   window.onscroll = function() {scrollFunction()};
+ 
+   function scrollFunction() {
+     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("logo").style.width = "20%";
+        document.getElementById("about").style.marginTop = "10px";
+     } else {
+        document.getElementById("logo").style.width = "40%";
+        document.getElementById("about").style.marginTop = "45px";
+     }
+   }
