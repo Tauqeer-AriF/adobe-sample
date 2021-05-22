@@ -135,8 +135,8 @@ iframe{
   .home{display: none;}
   .slider{
     background-color: #eeeeee;
-    height: 500px;
-    padding-top: 250px;
+    height: 300px;
+    padding-top: 50px;
   }
   .main-iframe{
     height: 240px;
@@ -152,6 +152,24 @@ iframe{
   }
   .desk-footer{
     display: none;
+  }
+  .first-section{
+    height: 300px;
+    padding-top:100px;
+  }
+  .first-section h1, .slider h1{
+    font-size: 30px;
+  }
+  .slider-btn{
+    padding-top: 200px;
+  }
+  .slider-container{
+    width:100%;
+    padding: 20px 0;
+  }
+  .carousel-inner{
+    height:auto;
+    margin-bottom: 50px;
   }
 }
 
