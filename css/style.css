@@ -115,6 +115,12 @@ iframe{
 .mobile-home:hover{
   text-decoration:none;
 }
+.mobile-footer{
+  display: none;
+}
+.desk-footer{
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .slider-container{
     width:80%;
@@ -137,6 +143,15 @@ iframe{
   }
   #logo{
     width: 20%;
+  }
+  .carousel-indicators li{
+    margin: -9px 10px 0 10px;
+  }
+  .mobile-footer{
+    display: block !important;
+  }
+  .desk-footer{
+    display: none;
   }
 }
 
