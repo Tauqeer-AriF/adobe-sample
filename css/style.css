@@ -55,12 +55,12 @@ p{
   background-color: black;
 }
 .slider-btn{
-  background-image: linear-gradient(to right, #2c63a6 , #86c306);
+  background-image: linear-gradient(to right, #0c5ec4 , #86c306);
   padding-top: 335px;
   color: white;
 }
 h1,h2,h3{
-  background: -webkit-linear-gradient(#2c63a6, #86c306);
+  background: -webkit-linear-gradient(#005ac7, #86c306);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -148,6 +148,7 @@ iframe{
 .about{
   background-color:#282828 ;
   padding-top: 150px;
+  height: 1000px;
 }
 .about-img{
   transition: 0.5s;
@@ -162,7 +163,7 @@ iframe{
   background-color:#282828 ;
 }
 #top-btn {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;

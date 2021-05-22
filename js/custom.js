@@ -52,9 +52,13 @@ function index2() {
    function scrollFunction() {
      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("logo").style.width = "20%";
-        document.getElementById("about").style.marginTop = "10px";
+        document.getElementById("about").style.marginTop = "20px";
+        document.getElementById("about").style.fontSize = "15px";
+        document.getElementById("top-btn").style.display = "block";
      } else {
         document.getElementById("logo").style.width = "40%";
         document.getElementById("about").style.marginTop = "45px";
+        document.getElementById("about").style.fontSize = "25px";
+        document.getElementById("top-btn").style.display = "none";
      }
    }
