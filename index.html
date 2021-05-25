@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
     </button>
     <a href="index.html" class="mobile-home text-right w-25"><img src="images/logo.png" class="image-fluid w-50" /></a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mx-auto mt-2 mt-lg-0 font-weight-bold">
+      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
         <!-- <li class="nav-item text-right">
           <a class="nav-link px-0"><img src="images/logo.png" class="image-fluid w-25"/></a>
         </li> -->
@@ -27,6 +27,17 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" id="about" href="about.html">About</a>
+        </li>
+        <li class="nav-item pl-lg-5">
+          <div class="dropdown" id="dropdown">
+            <button type="button" id="lang-btn" class="btn btn-outline-light dropdown-toggle rounded-0" data-toggle="dropdown">
+              Language
+            </button>
+            <div class="dropdown-menu text-center bg-dark p-0">
+              <a class="dropdown-item" onclick="english()"><img src="images/English.jpg" class="img-fluid w-25"/></a>
+              <a class="dropdown-item" onclick="czech()"><img src="images/Czech.jpg" class="img-fluid w-25"></a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -42,7 +53,7 @@
   </div>
 
   <div class="container-fluid text-center slider-btn">
-    <h4 class="border-bottom w-25 mx-auto pb-5">FEATURED VIDEO 1 OF 5</h4>
+    <h4 class="border-bottom w-25 mx-auto pb-5" id="feat">FEATURED VIDEO 1 OF 5</h4>
     <ol class="carousel-indicators">
       <li  class="active" onclick="index1()"></li>
       <li  onclick="index2()"></li>
@@ -65,25 +76,23 @@
 
 </div>
 
-
   <div class="container-fluid text-center slider">
-    <p>UP NEXT</p>
-    <h1>Video Book Review</h1>
-    <p>Adjust color, contrast, and light in your sequences in eye-catching and innovative ways.</p>
+    <p id="next">UP NEXT</p>
+    <h1 id="video-title">Video Book Review</h1>
+    <p id="subtitle">Adjust color, contrast, and light in your sequences in eye-catching and innovative ways.</p>
   </div>
 
 
   <footer class="container-fluid text-center pt-3">
     <div class="container desk-footer">
-      <p class="font-weight-light"><span class="mx-4">Copyright © 2021 Glass Door Insights LLC.</span>/<a href="privacy.html" class="mx-4">Privacy</a>/<a href="terms.html" class="mx-4"> Terms of Use</a></p>
+      <p class="font-weight-light"><span class="mx-4" id="copy">Copyright © 2021 Glass Door Insights LLC.</span>/<a href="privacy.html" id="privacy" class="mx-4">Privacy</a>/<a href="terms.html" id="term" class="mx-4"> Terms of Use</a></p>
     </div>
     <div class="container mobile-footer">
-      <p class="mx-4">Copyright © 2021 Glass Door Insights LLC.</p>
-      <p><a href="privacy.html" class="mx-4">Privacy</a></p>
-      <p><a href="terms.html" class="mx-4"> Terms of Use</a></p>
+      <p class="mx-4" id="copy">Copyright © 2021 Glass Door Insights LLC.</p>
+      <p><a href="privacy.html" id="privacy-2" class="mx-4">Privacy</a></p>
+      <p><a href="terms.html" class="mx-4" id="term-2"> Terms of Use</a></p>
     </div>
   </footer>
-
 
 
 

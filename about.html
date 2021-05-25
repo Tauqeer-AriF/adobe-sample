@@ -29,6 +29,17 @@
         <li class="nav-item">
           <a class="nav-link text-light" id="about" href="about.html">About</a>
         </li>
+        <li class="nav-item pl-lg-5">
+          <div class="dropdown" id="dropdown">
+            <button type="button" id="lang-btn" class="btn btn-outline-light dropdown-toggle rounded-0" data-toggle="dropdown">
+              Language
+            </button>
+            <div class="dropdown-menu text-center bg-dark p-0">
+              <a class="dropdown-item" onclick="english()"><img src="images/English.jpg" class="img-fluid w-25"/></a>
+              <a class="dropdown-item" onclick="czech()"><img src="images/Czech.jpg" class="img-fluid w-25"></a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -39,7 +50,7 @@
     <div class="container text-light py-5">
       <h1>About</h1>
       <div class="row">
-        <div class="col-sm-6 bg-dark my-5 py-3 px-0">
+        <div class="col-sm-6 bg-dark my-2 py-3 px-0">
           <p class="mx-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum dolor id ligula pellentesque, eget pellentesque ante facilisis. 
             Cras eget gravida mi, non auctor risus. Nulla nisi nisl, tincidunt in eleifend quis, tristique et massa. Vivamus tellus nulla,
@@ -49,7 +60,7 @@
           </p>
         </div>
         <div class="col-sm-6 px-0">
-          <img src="images/bg1.jpg" class="img-fluid about-img" />
+          <img src="images/bg1.png" class="img-fluid about-img" />
         </div>
       </div>
     </div>
